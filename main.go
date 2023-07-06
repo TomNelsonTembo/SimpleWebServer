@@ -23,7 +23,7 @@ if r.URL.Path != "/hello" {
 	return
 }
 if r.Method != "GET"{
-	http.Error(w, "method is not supported". http.StatusNotFound)
+	http.Error(w, "method is not supported", http.StatusNotFound)
 	return
 }
 }
